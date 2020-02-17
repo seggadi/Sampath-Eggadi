@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+	<head>
+		<script src = "/resources/sap-ui-core.js"
+		        data-sap-ui-libs = "sap.m, sap.ui.layout, sap.ui.layout"
+		        data-sap-ui-theme = "sap_bluecrystal"
+		        data-sap-ui-resourceroots = '{
+		        	"project.tasks"	:"./"
+		        	}'> 
+		</script>
+		<script>
+			var oCompContainer = new sap.ui.core.ComponentContainer({
+				"name": "project.tasks"
+			});
+			oCompContainer.placeAt("idTask");
+		</script>
+	</head>
+	<body class = "sapUiBody">
+		<div id = "idTask"></div>
+	</body>
+</html>

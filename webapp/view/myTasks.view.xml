@@ -1,0 +1,41 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="project.tasks.controller.myTasks"
+	xmlns:html="http://www.w3.org/1999/xhtml">
+	<App>
+		<pages>
+			<Page title="My Tasks">
+				<content>
+					<Table id = "idTab" mode = "MultiSelect">
+						<headerToolbar>
+							<Toolbar>
+								<ToolbarSpacer/>
+								<Button icon = "sap-icon://add-activity-2" tooltip = "Add Task" press = "onAddTask"></Button>
+								<Button icon = "sap-icon://delete" tooltip = "Delete Task" press = "onDeleteTask"></Button>
+								<Button icon = "sap-icon://edit" tooltip = "Edit Row" press = "onEditRow"></Button>
+							</Toolbar>
+						</headerToolbar>
+						<columns>
+							<Column>
+								<Label text = "Date"></Label>
+							</Column>
+							<Column>
+								<Label text = "Assignee"></Label>
+							</Column>
+							<Column>
+								<Label text = "Title"></Label>
+							</Column>
+							<Column>
+								<Label text = "Description"></Label>
+							</Column>
+							<Column>
+								<Label text = "Due Date"></Label>
+							</Column>
+							<Column>
+								<Label text = "Status"></Label>
+							</Column>
+						</columns>
+					</Table>
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>

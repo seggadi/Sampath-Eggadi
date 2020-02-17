@@ -1,0 +1,40 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core" xmlns:f="sap.ui.layout.form">
+	<Dialog title="Add New Task">
+		<f:SimpleForm editable="true">
+			<f:content>
+				<Label text="Date"></Label>
+				<DatePicker id="idDate" placeholder="Enter Date ..." change="handleChange" class="sapUiSmallMarginBottom"></DatePicker>
+				<Label text="Assignee"></Label>
+				<Select id = "idAssignee">
+					<items>
+						<core:Item key = "Sampath" text = "Sampath"></core:Item>
+						<core:Item key = "Kiran" text = "Kiran"></core:Item>
+						<core:Item key = "Ayaan" text = "Ayaan"></core:Item>
+						<core:Item key = "Muzamil" text = "Muzamil"></core:Item>
+						<core:Item key = "Sandeep" text = "Sandeep"></core:Item>
+						<core:Item key = "Ajay" text = "Ajay"></core:Item>
+						<core:Item key = "Pavan" text = "Pavan"></core:Item>
+					</items>
+				</Select>
+				<Label text="Title"></Label>
+				<Input id = "idTitle"></Input>
+				<Label text="Description"></Label>
+				<Input id = "idDes"></Input>
+				<Label text="Due Date"></Label>
+				<DatePicker id="idDue" placeholder="Enter Date ..." change="handleChange" class="sapUiSmallMarginBottom"></DatePicker>
+				<Label text="Status"></Label>
+				<Select id = "idStat">
+					<items>
+						<core:Item key = "P" text = "Pending"></core:Item>
+						<core:Item key = "C" text = "Complete"></core:Item>
+					</items>
+				</Select>
+			</f:content>
+		</f:SimpleForm>
+		<Toolbar>
+		<ToolbarSpacer/>
+		<Button icon="sap-icon://create-form" tooltip="Create Task" press = "onSave"></Button>
+		<Button icon="sap-icon://decline" tooltip="Cancel" press = "onCancel"></Button>
+		</Toolbar>
+	</Dialog>
+</core:FragmentDefinition>
